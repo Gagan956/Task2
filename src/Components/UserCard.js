@@ -6,12 +6,13 @@ export default function UserCard({ user, onSelect }) {
       onClick={() => onSelect(user)}
       className="cursor-pointer bg-indigo-50 rounded-lg shadow hover:shadow-lg hover:scale-105 transition p-4 flex flex-col items-center border border-indigo-100"
     >
-      <div className="relative w-16 h-16 mb-2">
+      <div className="w-16 h-16 mb-3 relative">
         <Image
           src={user.picture.thumbnail}
           alt="Profile picture"
-          fill
-          className="rounded-full border-2 border-indigo-200 object-cover"
+          width={64}
+          height={64}
+          className="rounded-full"
         />
       </div>
       <p className="text-xs text-indigo-500 capitalize">{user.gender}</p>

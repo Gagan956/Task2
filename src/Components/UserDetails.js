@@ -8,11 +8,11 @@ export default function UserDetails({ user }) {
   return (
     <div className="flex flex-col md:flex-row items-center bg-indigo-50 rounded-lg shadow p-6 mb-6 border border-indigo-100">
       <Image
-        src={user.picture?.large || "/default-avatar.png"}
+        src={user.picture.large}
         alt="Profile picture"
         width={190}
         height={190}
-        className="rounded-full border-4 border-white shadow-md mb-4 md:mb-0 md:mr-6"
+        className="rounded-full border object-cover"
       />
       <div className="space-y-1 text-center md:text-left">
         <h2 className="text-2xl font-bold text-red-700">
