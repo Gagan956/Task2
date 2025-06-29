@@ -12,7 +12,7 @@ export default function UserDetails({ user }) {
         alt="Profile picture"
         width={190}
         height={190}
-        className="rounded-full border object-cover"
+        className="rounded-full border-4 border-white shadow-md mb-4 md:mb-0 md:mr-6"
       />
       <div className="space-y-1 text-center md:text-left">
         <h2 className="text-2xl font-bold text-red-700">
