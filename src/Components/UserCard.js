@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function UserCard({ user, onSelect }) {
   return (
     <div
@@ -7,7 +5,7 @@ export default function UserCard({ user, onSelect }) {
       className="cursor-pointer bg-indigo-50 rounded-lg shadow hover:shadow-lg hover:scale-105 transition p-4 flex flex-col items-center border border-indigo-100"
     >
       <div className="w-16 h-16 mb-3 relative">
-        <Image
+        <img
           src={user.picture.thumbnail}
           alt="Profile picture"
           width={64}

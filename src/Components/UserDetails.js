@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function UserDetails({ user }) {
   if (!user) return null;
 
@@ -7,7 +5,7 @@ export default function UserDetails({ user }) {
 
   return (
     <div className="flex flex-col md:flex-row items-center bg-indigo-50 rounded-lg shadow p-6 mb-6 border border-indigo-100">
-      <Image
+      <img
         src={user.picture.large}
         alt="Profile picture"
         width={190}
